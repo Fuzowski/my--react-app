@@ -1,18 +1,11 @@
-import { useState } from "react";
+import {useState} from "react";
 
 function App() {
-  
-  const [pets, setPets] = useState(["Dog", "Cat", "Rabbit", "Hamster"]);
-
+  const [message, setMessage] = useState ("My first fluffy website");
   return (
     <div>
-      <h1>My Furry Friends</h1>
-      <ul>
-        {pets.map((pet, index) => (
-          <li key={index}>{pet}</li>
-        ))}
-      </ul>
-      <button onClick={() => setPets([...pets, "New Pet"])}>Add a Pet</button>
+      <h1>Furry Friends List</h1>
+      <p>My first React website!</p>
     </div>
   );
 }
